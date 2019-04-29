@@ -4,14 +4,17 @@ const routes = express.Router()
 
 const authMiddleware = require('./app/middlewares/auth')
 
-const UserController = require('./app/controllers/UserController')
-const SessionController = require('./app/controllers/SessionController')
+const controller = require('./app/controllers')
 
-routes.post('/users', UserController.store)
-routes.post('/sessions', SessionController.store)
+routes.post('/users', controller.UserController.store)
+routes.post('/sessions', controller.SessionController.store)
 
-routes.get('/teste', authMiddleware, (req, res) => {
-  res.json({ ok: true })
-})
+routes.use(authMiddleware)
+
+routes.get('/ads', controller.AdController.index)
+routes.get('/ads/:id', controller.AdController.show)
+routes.post('/ads', controller.AdController.store)
+routes.put('/ads/:id', controller.AdController.update)
+routes.delete('/ads/:id', controller.AdController.destroy)
 
 module.exports = routes
