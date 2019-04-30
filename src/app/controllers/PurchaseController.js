@@ -40,7 +40,7 @@ class PurchaseController {
     }
 
     if (ad.purchasedBy) {
-      return res.status(400).json({ error: 'This ad had alredy puchased' })
+      return res.status(400).json({ error: 'This ad had alredy been puchased' })
     }
 
     ad.purchasedBy = id
