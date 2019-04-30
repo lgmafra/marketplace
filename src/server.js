@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 const express = require('express')
 const Sentry = require('@sentry/node')
 const validate = require('express-validation')
