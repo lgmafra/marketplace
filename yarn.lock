@@ -123,6 +123,10 @@ array-unique@^0.3.2:
   version "0.3.2"
   resolved "https://registry.yarnpkg.com/array-unique/-/array-unique-0.3.2.tgz#a894b75d4bc4f6cd679ef3244a9fd8f46ae2d428"
 
+asap@~2.0.6:
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/asap/-/asap-2.0.6.tgz#e50347611d7e690943208bbdafebcbc2fb866d46"
+
 assign-symbols@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/assign-symbols/-/assign-symbols-1.0.0.tgz#59667f41fadd4f20ccbc2bb96b8d4f7f78ec0367"
@@ -345,6 +349,10 @@ color-convert@^1.9.0:
 color-name@1.1.3:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/color-name/-/color-name-1.1.3.tgz#a7d0558bd89c42f795dd42328f740831ca53bc25"
+
+commander@~2.20.0:
+  version "2.20.0"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-2.20.0.tgz#d58bb2b5c1ee8f87b0d340027e9e94e222c5a422"
 
 component-emitter@^1.2.1:
   version "1.3.0"
@@ -752,6 +760,16 @@ expand-brackets@^2.1.4:
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
 
+express-handlebars@^3.0.0, express-handlebars@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/express-handlebars/-/express-handlebars-3.0.2.tgz#4f70f1bb06cade5436a7a2c90efc2c9af1cf71e7"
+  dependencies:
+    glob "^7.1.3"
+    graceful-fs "^4.1.2"
+    handlebars "^4.0.13"
+    object.assign "^4.1.0"
+    promise "^8.0.2"
+
 express@^4.16.4:
   version "4.16.4"
   resolved "https://registry.yarnpkg.com/express/-/express-4.16.4.tgz#fddef61926109e24c515ea97fd2f1bdbf62df12e"
@@ -995,6 +1013,16 @@ got@^6.7.1:
 graceful-fs@^4.1.11, graceful-fs@^4.1.2:
   version "4.1.15"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.1.15.tgz#ffb703e1066e8a0eeaa4c8b80ba9253eeefbfb00"
+
+handlebars@^4.0.13:
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/handlebars/-/handlebars-4.1.2.tgz#b6b37c1ced0306b221e094fc7aca3ec23b131b67"
+  dependencies:
+    neo-async "^2.6.0"
+    optimist "^0.6.1"
+    source-map "^0.6.1"
+  optionalDependencies:
+    uglify-js "^3.1.4"
 
 has-flag@^3.0.0:
   version "3.0.0"
@@ -1550,6 +1578,10 @@ minimist@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.0.tgz#a35008b20f41383eec1fb914f4cd5df79a264284"
 
+minimist@~0.0.1:
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/minimist/-/minimist-0.0.10.tgz#de3f98543dbf96082be48ad1a0c7cda836301dcf"
+
 minipass@^2.2.1, minipass@^2.3.4:
   version "2.3.5"
   resolved "https://registry.yarnpkg.com/minipass/-/minipass-2.3.5.tgz#cacebe492022497f656b0f0f51e2682a9ed2d848"
@@ -1683,6 +1715,10 @@ negotiator@0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
 
+neo-async@^2.6.0:
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.0.tgz#b9d15e4d71c6762908654b5183ed38b753340835"
+
 nice-try@^1.0.4:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/nice-try/-/nice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"
@@ -1701,6 +1737,16 @@ node-pre-gyp@^0.12.0:
     rimraf "^2.6.1"
     semver "^5.3.0"
     tar "^4"
+
+nodemailer-express-handlebars@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/nodemailer-express-handlebars/-/nodemailer-express-handlebars-3.0.0.tgz#6ad913bba74e186d29831ce9bee30fd34b8f98be"
+  dependencies:
+    express-handlebars "^3.0.0"
+
+nodemailer@^6.1.1:
+  version "6.1.1"
+  resolved "https://registry.yarnpkg.com/nodemailer/-/nodemailer-6.1.1.tgz#09e88ef4b3646f01089c5d84d007b872141fb575"
 
 nodemon@^1.18.11:
   version "1.18.11"
@@ -1791,7 +1837,7 @@ object-copy@^0.1.0:
     define-property "^0.2.5"
     kind-of "^3.0.3"
 
-object-keys@^1.0.12:
+object-keys@^1.0.11, object-keys@^1.0.12:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/object-keys/-/object-keys-1.1.1.tgz#1c47f272df277f3b1daf061677d9c82e2322c60e"
 
@@ -1800,6 +1846,15 @@ object-visit@^1.0.0:
   resolved "https://registry.yarnpkg.com/object-visit/-/object-visit-1.0.1.tgz#f79c4493af0c5377b59fe39d395e41042dd045bb"
   dependencies:
     isobject "^3.0.0"
+
+object.assign@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/object.assign/-/object.assign-4.1.0.tgz#968bf1100d7956bb3ca086f006f846b3bc4008da"
+  dependencies:
+    define-properties "^1.1.2"
+    function-bind "^1.1.1"
+    has-symbols "^1.0.0"
+    object-keys "^1.0.11"
 
 object.pick@^1.3.0:
   version "1.3.0"
@@ -1824,6 +1879,13 @@ onetime@^2.0.0:
   resolved "https://registry.yarnpkg.com/onetime/-/onetime-2.0.1.tgz#067428230fd67443b2794b22bba528b6867962d4"
   dependencies:
     mimic-fn "^1.0.0"
+
+optimist@^0.6.1:
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/optimist/-/optimist-0.6.1.tgz#da3ea74686fa21a19a111c326e90eb15a0196686"
+  dependencies:
+    minimist "~0.0.1"
+    wordwrap "~0.0.2"
 
 optionator@^0.8.2:
   version "0.8.2"
@@ -1967,6 +2029,12 @@ process-nextick-args@~2.0.0:
 progress@^2.0.0:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
+
+promise@^8.0.2:
+  version "8.0.3"
+  resolved "https://registry.yarnpkg.com/promise/-/promise-8.0.3.tgz#f592e099c6cddc000d538ee7283bb190452b0bf6"
+  dependencies:
+    asap "~2.0.6"
 
 proxy-addr@~2.0.4:
   version "2.0.5"
@@ -2308,6 +2376,10 @@ source-map@^0.5.6:
   version "0.5.7"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.5.7.tgz#8a039d2d1021d22d1ea14c80d8ea468ba2ef3fcc"
 
+source-map@^0.6.1, source-map@~0.6.1:
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
+
 sparse-bitfield@^3.0.3:
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/sparse-bitfield/-/sparse-bitfield-3.0.3.tgz#ff4ae6e68656056ba4b3e792ab3334d38273ca11"
@@ -2516,6 +2588,13 @@ type-is@~1.6.16:
     media-typer "0.3.0"
     mime-types "~2.1.24"
 
+uglify-js@^3.1.4:
+  version "3.5.9"
+  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.5.9.tgz#372fbf95939555b1f460b1777d33a67d4a994ac9"
+  dependencies:
+    commander "~2.20.0"
+    source-map "~0.6.1"
+
 undefsafe@^2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/undefsafe/-/undefsafe-2.0.2.tgz#225f6b9e0337663e0d8e7cfd686fc2836ccace76"
@@ -2627,6 +2706,10 @@ widest-line@^2.0.0:
   resolved "https://registry.yarnpkg.com/widest-line/-/widest-line-2.0.1.tgz#7438764730ec7ef4381ce4df82fb98a53142a3fc"
   dependencies:
     string-width "^2.1.1"
+
+wordwrap@~0.0.2:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/wordwrap/-/wordwrap-0.0.3.tgz#a3d5da6cd5c0bc0008d37234bbaf1bed63059107"
 
 wordwrap@~1.0.0:
   version "1.0.0"

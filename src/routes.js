@@ -4,17 +4,19 @@ const routes = express.Router()
 
 const authMiddleware = require('./app/middlewares/auth')
 
-const controller = require('./app/controllers')
+const controllers = require('./app/controllers')
 
-routes.post('/users', controller.UserController.store)
-routes.post('/sessions', controller.SessionController.store)
+routes.post('/users', controllers.UserController.store)
+routes.post('/sessions', controllers.SessionController.store)
 
 routes.use(authMiddleware)
 
-routes.get('/ads', controller.AdController.index)
-routes.get('/ads/:id', controller.AdController.show)
-routes.post('/ads', controller.AdController.store)
-routes.put('/ads/:id', controller.AdController.update)
-routes.delete('/ads/:id', controller.AdController.destroy)
+routes.get('/ads', controllers.AdController.index)
+routes.get('/ads/:id', controllers.AdController.show)
+routes.post('/ads', controllers.AdController.store)
+routes.put('/ads/:id', controllers.AdController.update)
+routes.delete('/ads/:id', controllers.AdController.destroy)
+
+routes.post('/purchases', controllers.PurchaseController.store)
 
 module.exports = routes
